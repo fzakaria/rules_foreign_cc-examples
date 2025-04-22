@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout code
@@ -27,7 +27,7 @@ jobs:
       
       # Install libtinfo5 (ncurses compat lib required by Bazel toolchain)
       - name: Install required packages
-        run: sudo apt-get update && sudo apt-get install -y libncurses5
+        run: sudo apt-get update && sudo apt-get install -y libtinfo5
 
       - name: Build Folly
         run: |
