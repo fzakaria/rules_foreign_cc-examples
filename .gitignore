@@ -1,0 +1,25 @@
+# Bazel build outputs
+bazel-*
+
+# User-specific Bazel configuration
+*.bazelrc.user
+
+# Build artifacts
+*.log
+*.out
+*.runfiles/
+*.runfiles_manifest
+*.runfiles_manifest.tmp
+*.params
+*.d
+
+# IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Temporary files
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
